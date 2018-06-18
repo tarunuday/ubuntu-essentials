@@ -1,0 +1,5 @@
+#!/bin/bash
+
+declare -i STATE
+STATE=$(xinput --list-props "ELAN1010:00 04F3:3012 Touchpad" | sed -n 'y/\t/ /; s/^ *Device Enabled ([0-9]*): *//p')
+xinput --set-prop "ELAN1010:00 04F3:3012 Touchpad" "Device Enabled" $((1-STATE))
