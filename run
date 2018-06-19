@@ -1,5 +1,6 @@
 #!/bin/bash
 
-sudo apt-get install emacs
+sudo apt-get install terminator emacs ros-kinetic-desktop-full -y
 
-cp .touchpad ~/
+rm -rf ./.git
+cp .* ~/
