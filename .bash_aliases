@@ -5,7 +5,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-alias e='emacs' && alias se='sudo emacs';;
+alias e='emacs' && alias se='sudo emacs';
 alias einit='e ~/.emacs.d/init.el'
 
 alias d='dpkg -l | grep'
